@@ -35,7 +35,7 @@ body {
 
   /* Add styles to the container */
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr / repeat(3, 1fr);
   gap: 1rem;
 }
 
