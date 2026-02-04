@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form class="user-to-email">
+            <label for="firstName">First Name</label>
+            <input name="firstName" id="firstName" required />
+            <label for="lastName">Last Name</label>
+            <input name="lastName" id="lastName" required />
+            <button>Generate Email</button>
+        </form>
+        <span data-js="generated-email">...</span>
+
+        <form class="email-to-user">
+            <label for="email">E-Mail</label>
+            <input name="email" id="email" required />
+            <button>Generate Name</button>
+        </form>
+        <span data-js="generated-name">...</span>
+
+        <script src="index.js"></script>
+    </body>
+</html>
