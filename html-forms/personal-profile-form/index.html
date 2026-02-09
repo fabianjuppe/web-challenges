@@ -9,11 +9,13 @@
     <title>Personal Profile Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <header><h1>Create your Personal Profile</h1></header>
+  <header><h1 id="title">Create your Personal Profile</h1></header>
   <body>
-    <form>
-      <p>We want to get to know you! Please enter your personal information.</p>
-      <fieldset>
+    <form aria-labelledby="title">
+      <p id="personal-information-description">
+        We want to get to know you! Please enter your personal information.
+      </p>
+      <fieldset aria-describedby="personal-information-description">
         <legend>Personal Information</legend>
 
         <label for="first-name">First Name:</label>
@@ -25,11 +27,11 @@
         <label for="your-birthday">First Name:</label>
         <input type="date" id="your-birthday" />
       </fieldset>
-      <p>
+      <p id="further-information-description">
         Can you tell us a little bit more? We want to annoy you with unwanted
         ads.
       </p>
-      <fieldset>
+      <fieldset aria-describedby="further-information-description">
         <legend>Further Information</legend>
 
         <label for="favourite-color">Favourite Color:</label>
